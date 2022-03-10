@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Project Hexagon</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+    <script src="https://cdn.jsdelivr.net/npm/tweetnacl-util@0.15.0/nacl-util.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tweetnacl@1.0.1/nacl.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+</head>
+
+<body style="background-color: #666666;">
+
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <form class="login100-form validate-form" onsubmit="return false;">
+                    <span class="login100-form-title p-b-43">
+						welcome.
+					</span>
+
+                    <div class="container-login100-form-btn">
+                        <button type="button" class="login-with-google-btn" id="quickstart-sign-in">
+                            Sign in with Google
+                        </button>
+                    </div>
+
+
+                    <!-- <div class="text-center p-t-46 p-b-20">
+                        <span class="txt2">
+							-- and search your friend --
+						</span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+                        <input name="email" class="input100" type="text" id="peer">
+                        <span class="focus-input100"></span>
+                        <span class="label-input100">Email</span>
+                    </div>
+
+
+
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn" id="search" onclick="clicked()">
+							Search
+						</button>
+                    </div> -->
+
+
+
+
+                </form>
+
+                <div class="login100-more">
+                    <div class="center">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="87.59px" height="99.306px" viewBox="0 0 87.59 99.306" enable-background="new 0 0 87.59 99.306" xml:space="preserve">
+                            <g>
+                                <path stroke="#777" stroke-miterlimit="10" d="M45.377,98.392c-0.953,0.55-2.513,0.552-3.467,0.005l-39.68-22.75
+                                    c-0.954-0.547-1.732-1.895-1.729-2.995l0.139-45.739c0.003-1.1,0.785-2.45,1.738-3l39.837-23c0.953-0.55,2.513-0.552,3.467-0.005
+                                    l39.68,22.75c0.954,0.547,1.732,1.895,1.729,2.995l-0.139,45.739c-0.003,1.1-0.785,2.45-1.738,3L45.377,98.392z"/>
+                            </g>
+                            <style type="text/css">
+                                path{fill:url(#hexagonGradient)}
+                            </style>
+                            <defs>
+                                <linearGradient id="hexagonGradient">
+                                    <stop offset="5%" stop-color="#fdfbfb" />
+                                    <stop offset="95%" stop-color="#ebedee" />
+                                </linearGradient>
+                            </defs>
+                            </svg>
+
+                        <div class="callout">PROJECT HEXAGON</div>
+                    </div>
+
+
+                    <style>
+                        @import url(https://fonts.googleapis.com/css?family=Lato:100,300);
+                        body,
+                        html {
+                            height: 100%;
+                            background-color: #ddd;
+                        }
+                        
+                        .center {
+                            margin: 0;
+                            position: relative;
+                            top: 50%;
+                            left: 50%;
+                            -ms-transform: translate(-50%, -50%);
+                            transform: translate(-50%, -50%);
+                        }
+                        
+                        path {
+                            stroke-dasharray: 300;
+                            stroke-dashoffset: 300;
+                            stroke-width: 0.75;
+                            fill-opacity: 0;
+                            /* fill: url(#hexagonGradient); */
+                            animation: dash 2s ease-in-out forwards;
+                            animation-delay: 0.5s;
+                            transform-origin: center center;
+                        }
+                        
+                        svg {
+                            width: 600px;
+                            height: 300px;
+                            display: block;
+                            margin: 0 auto;
+                            margin-bottom: 40px;
+                        }
+                        
+                        @keyframes dash {
+                            0% {
+                                stroke-dashoffset: 300;
+                                fill-opacity: 0;
+                            }
+                            75% {
+                                fill-opacity: 0;
+                            }
+                            100% {
+                                stroke-dashoffset: 0;
+                                fill-opacity: 1;
+                                transform: rotate(-180deg);
+                            }
+                        }
+                        
+                        .callout {
+                            opacity: 0;
+                            width: 100%;
+                            text-align: center;
+                            font-size: 3em;
+                            font-family: "Lato", sans-serif;
+                            font-weight: 200;
+                            letter-spacing: 0.2em;
+                            animation: fade 0.5s ease-in-out forwards;
+                            animation-delay: 2.5s;
+                            color: #555;
+                            -webkit-font-smoothing: antialiased;
+                        }
+                        
+                        @keyframes fade {
+                            0% {
+                                opacity: 0;
+                                margin-top: -10px;
+                            }
+                            100% {
+                                opacity: 1;
+                                margin-top: 0px;
+                            }
+                        }
+                    </style>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.8.1/firebase-app.js"></script>
+    <script src="/__/firebase/8.8.1/firebase-auth.js"></script>
+    <script src="/__/firebase/8.8.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+    <script src="js/main.js"></script>
+    <script src="js/intro.js"></script>
+
+</body>
+
+</html>

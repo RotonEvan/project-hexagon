@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/uuid@latest/dist/umd/uuidv4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tweetnacl-util@0.15.0/nacl-util.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tweetnacl@1.0.1/nacl.min.js"></script>
+    <!-- <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/multiaddr@9.0.2/dist/index.min.js"></script> -->
+    <script src="https://unpkg.com/multiaddr/dist/index.min.js"></script>
+
+    <!-- <script src="https://unpkg.com/cids@1.1.4/dist/index.js"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" /> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- <script src="./node_modules/ipfs/dist/index.min.js"></script> -->
+    <!-- <script src="js/index.min.js"></script> -->
+    <!-- <script src="https://unpkg.com/ipfs-http-client/dist/index.js"></script> -->
+    <!-- <script src="https://unpkg.com/ipfs-api@9.0.0/dist/index.js" integrity="sha384-5bXRcW9kyxxnSMbOoHzraqa7Z0PQWIao+cgeg327zit1hz5LZCEbIMx/LWKPReuB" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ipfs/0.58.7-rc.1/index.min.js" integrity="sha512-IuczYwHkTdEeLx6wHI3nUndaHHoXyHheIcwR6CK5gul/kViW+3jxc+BY8UqbhTQP3nQFY4AGPgemWRTFiFgIvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexagon Feed</title>
+</head>
+
+<body>
+    <style>
+        hr {
+            width: 70%;
+            left: 5px;
+            position: absolute;
+        }
+    </style>
+    <textarea type="text" name="post" id="post"></textarea>
+    <br>
+    <br>
+    <button type="submit" onclick="sendPost()" id="sendPost">Post!</button>
+    <div class="posts">
+        <!-- <div class="single-post">
+            <h3 class="name">Project Hexagon</h3>
+            <p class="content">This is a test post</p>
+            <p class="timestamp">25.12.2021</p>
+        </div> -->
+        <template data-template="post-temp">
+            <div class="single-post">
+                <h3 class="name"></h3>
+                <p class="content"></p>
+                <p class="timestamp"></p>
+            </div>
+        </template>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.8.1/firebase-app.js"></script>
+    <script src="/__/firebase/8.8.1/firebase-auth.js"></script>
+    <script src="/__/firebase/8.8.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+    <script src="js/bundle.storage.js"></script>
+    <script src="js/feed.js"></script>
+
+</body>
+
+</html>
